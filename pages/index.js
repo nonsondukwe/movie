@@ -1,51 +1,11 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import React, { useState, useEffect, useReducer } from 'react'
 import { Flex, Box, Text, Input, Grid, GridItem, SimpleGrid } from '@chakra-ui/react';
-import hero from '../public/hero.png'
 import Layout from '../Components/Layout';
-import { baseUrl, fetchData } from '../utils/fetchdata';
 
 
 export default function Home({movies}) {
-  // function reducer(state, action) {
-  //   switch (action.type) {
-  //     case 'FETCH_REQUEST':
-  //       return { ...state, loading: true, error: '' };
-  //     case 'FETCH_SUCCESS':
-  //       return { ...state, loading: false, movies: action.payload, error: '' };
-  //     case 'FETCH_FAIL':
-  //       return { ...state, loading: false, error: action.payload };
-  //     default:
-  //       state;
-  //   };
-  // };
-  // const [
-  //   { loading, movies, error, },
-  //   dispatch,
-  // ] = useReducer(reducer, {
-  //   loading: true,
-  //   movies: [],
-  //   error: '',
-  // });
-
-  // const fetchData = async () => {
-  //   try {
-  //     dispatch({ type: 'FETCH_REQUEST' });
-  //     const { data } = await axios.get('https://www.omdbapi.com/?s=starwars&apikey=1c905d62');
-  //     dispatch({ type: 'FETCH_SUCCESS', payload: data });
-  //   } catch (err) {
-  //    err;
-  //   }
-    
-  // };
-  useEffect(() => {
-    console.log(movies);
-
-  }, []);
-    
-
+ 
   
   return (
     
